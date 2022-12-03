@@ -41,3 +41,6 @@ et deploy maintenant fait référence au repo de ce lien : git@github.com:Eckson
     git remote rm origin
     git remote add deploy git@github.com:Eckson-Glitho/ESMT-TP-Git.git
 }
+
+suite a ca pour faire le prochain push il faire:
+git push --set -upstream origin main
