@@ -18,3 +18,5 @@ git checkout -b develop (créer et basculer sur la branche)
 } (créer et basculer sur la branche)
 
 git diff develop main (montre l'état de la branche develop par rapport a la branche main)
+
+git merge develop (pour mettre a jours main avec develop)
