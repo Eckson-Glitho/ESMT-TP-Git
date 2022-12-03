@@ -7,15 +7,18 @@ git remote get-url --all origin (pour afficher les liens enrégistrés en local)
 git remote rm origin (pour supprimer les liens enrégistrés en local)
 
 git checkout -b develop (créer et basculer sur la branche)
+
+Créer et basculer sur la branche
 {
     git branch develop
     git checkout develop
-} (créer et basculer sur la branche)
+}
 
+Créer et basculer sur la branche
 {
     git branch develop
     git switch develop
-} (créer et basculer sur la branche)
+}
 
 git diff develop main (montre l'état de la branche develop par rapport a la branche main)
 
@@ -23,3 +26,18 @@ git merge develop (pour mettre a jours main avec develop)
 
 git branch recovery 
 git checkout recovery
+
+Pour supprimer une branche il faut faire :
+git branch -l (pour voir la liste des branch disponible en local)
+git branch -D recovery (pour supprimer la branche recovery en local)
+
+pour supprimer la branche en remote il faut faire :
+git push --delete origin recovery
+
+Ici on commence par supprimer remote origin avec la première commande
+ensuite on rajoute un nouveau remote appelé deploy avec la deuxième commande
+et deploy maintenant fait référence au repo de ce lien : git@github.com:Eckson-Glitho/ESMT-TP-Git.git
+{
+    git remote rm origin
+    git remote add deploy git@github.com:Eckson-Glitho/ESMT-TP-Git.git
+}
