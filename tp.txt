@@ -5,3 +5,15 @@ git remote add origin (permet d'ajouter la référence vers le depot)
 git push origin main (permet d'ajouter les modifications local dans le remote : local repo -> remote repo)
 git remote get-url --all origin (pour afficher les liens enrégistrés en local)
 git remote rm origin (pour supprimer les liens enrégistrés en local)
+
+git checkout -b develop (créer et basculer sur la branche)
+{
+    git branch develop
+    git checkout develop
+} (créer et basculer sur la branche)
+
+{
+    git branch develop
+    git switch develop
+} (créer et basculer sur la branche)
+
