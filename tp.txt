@@ -1,0 +1,5 @@
+git init (commande pour initialiser le projet)
+git add . (commade pour ajouter les fichiers et de faire les indexations : working directory -> staging area)
+git commit -m "..." (permet d'enrégistrer les modifications : Staging area -> local repo)
+git remote add origin (permet d'ajouter la référence vers le depot)
+git push origin main (permet d'ajouter les modifications local dans le remote : local repo -> remote repo)
